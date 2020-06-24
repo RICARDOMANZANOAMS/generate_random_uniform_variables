@@ -1,13 +1,23 @@
 # generate_random_uniform_variables
 This section shows how to generate uniform distributed variables between 0 and 1 
 To generate a random variable uniformly distributed between [0,1]. It is necessary to know that each value generated has the same probability to appear in the experiment. It means that all the values are equally likely. 
+
 To explain this it is necessary to understand what does it mean uniformly distributed. If we have numbers from 1 to 10. By definition, we know that the probability that one number appears has the same probability than another appears.
+
 As we see in the figure below. The probability that number 1 appears is the same probability that number 2 appears. In this case we know that there are 10 equally likely states.
- 	[1	2	3	4	5	6	7	8	9	10     ]
-Probability	 1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10
+ 	[1,2,3,4,5,6,7,8,9,10]
+  
+Probability	that every number appears 1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10	1/10
+
 The probability of each number is a discrete probability
+
 In the next part we will explain a uniform distribution continuous in order to find and expression which allow us generate random variables with uniform distribution
 The probability density function of the uniform distribution is
+
+![](https://latex.codecogs.com/gif.latex?f%28x%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%20%5Cfrac%7B1%7D%7Bb-a%7D%20%26%20a%5Cleq%20x%5Cleq%20b%5C%5C%200%20%26%20x%3C%20a%20%5C%2C%20%5C%2C%20x%3E%20b%20%5Cend%7Bmatrix%7D%5Cright.)
+
+
+
 f(x)={█(1/(b-a),&a≤x≤b@0     ,&x<a or x>b)┤
 Where 1/(b-a) is the probability for all x between a and b.
 The cumulative density distribution of the uniform distribution is 
