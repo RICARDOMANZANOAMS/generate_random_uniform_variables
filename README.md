@@ -16,12 +16,12 @@ The probability density function of the uniform distribution is
 
 ![](https://latex.codecogs.com/gif.latex?f%28x%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%20%5Cfrac%7B1%7D%7Bb-a%7D%20%26%20a%5Cleq%20x%5Cleq%20b%5C%5C%200%20%26%20x%3C%20a%20%5C%2C%20%5C%2C%20x%3E%20b%20%5Cend%7Bmatrix%7D%5Cright.)
 
-
-
-f(x)={█(1/(b-a),&a≤x≤b@0     ,&x<a or x>b)┤
 Where 1/(b-a) is the probability for all x between a and b.
 The cumulative density distribution of the uniform distribution is 
-F(x)={█((x-a)/(b-a),&a≤x≤b@0     ,&x<a or x>b)┤
+
+
+![](https://latex.codecogs.com/gif.latex?f%28x%29%3D%5Cleft%5C%7B%5Cbegin%7Bmatrix%7D%20%5Cfrac%7Bx-a%7D%7Bb-a%7D%20%26%20a%5Cleq%20x%5Cleq%20b%5C%5C%200%20%26%20x%3C%20a%20%5C%2C%20%5C%2C%20x%3E%20b%20%5Cend%7Bmatrix%7D%5Cright.)
+
 We know that  F(x)=(x-a)/(b-a) is a variable uniformly distributed. Thus, in order to get values x uniformly distributed it is necessary to find the inverse of F(x).
 y=(x-a)/(b-a)
 x=y(b-a)+a
@@ -32,8 +32,10 @@ x=y(1-0)+0
 x=y
 Where y has to be uniformly distribute between 0 and 1.Generally programs use pseudo-random algorithms in order to calculate values equally likely between 0 an 1.
 The next algorithm is used for the majority of programs in order to calculate values with same probability
-X_(n+1)=(a*X_n+c)    mod  m    n≥0
-X_(n+1) is the remainder which was obtained when a*X_n+c is divided by m. Thus each X_n  is one of the values 0,1,2,….m-1, and the quantity X_n /m is taken as the random number. X_o is the seed to generate the random variables. 
+
+![](https://latex.codecogs.com/gif.latex?X_%7Bn&plus;1%7D%3D%28a*X_%7Bn%7D&plus;c%29%20%5C%2C%20mod%20%5C%2C%20m%5C%2C%20%5C%2C%20%5C%2C%20n%5Cgeq%200)
+
+![](https://latex.codecogs.com/gif.latex?X_%7Bn&plus;1%7D) is the remainder which was obtained when ![](https://latex.codecogs.com/gif.latex?a*X_%7Bn%7D&plus;c)  is divided by m. Thus each X_n  is one of the values 0,1,2,….m-1, and the quantity X_n /m is taken as the random number. X_o is the seed to generate the random variables. 
 As an example:
 If a=3, c=7 and m=23 with seed X_o=2 
 X_1=(3*X_0+7)    mod  23=(3*2+7)    mod  23     =13 mod 23=13
